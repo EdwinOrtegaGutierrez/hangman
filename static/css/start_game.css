@@ -1,0 +1,110 @@
+.hangman {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    position: relative;
+    margin-top: 100px;
+}
+
+.head, .body, .left-arm, .right-arm, .left-leg, .right-leg {
+    border: 2px solid white;
+    position: absolute;
+}
+
+.head {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    top: 1%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.body {
+    width: 10px;
+    height: 70px;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.left-arm, .right-arm, .left-leg, .right-leg {
+    width: 30px;
+    height: 10px;
+}
+
+.left-arm {
+    top: 28%;
+    left: 50%;
+    transform: rotate(45deg);
+}
+
+.right-arm {
+    top: 28%;
+    right: 50%;
+    transform: rotate(-45deg);
+}
+
+.left-leg {
+    bottom: 35%;
+    left: 49.8%;
+    transform: rotate(45deg);
+}
+
+.right-leg {
+    bottom: 35%;
+    right: 49.8%;
+    transform: rotate(-45deg);
+}
+
+.platform {
+    width: 200px;
+    height: 20px;
+    border: 2px solid white;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.platform2{
+    width: 100px;
+    height: 10px;
+    border: 2px solid white;
+    position: absolute;
+    top: -1560%;
+    left: 13%;
+}
+
+.post {
+    width: 15px;
+    height: 250px;
+    border: 2px solid white;
+    position: absolute;
+    bottom: 16px;
+    left: 10%;
+    transform: translateX(-50%);
+}
+
+.rope {
+    width: 2px;
+    height: 63px;
+    background-color: white;
+    position: absolute;
+    top: -1515%;
+    left: 50%;
+}
+
+.word{
+    margin-top: 2%;
+    color: #FAD02E;
+}
+
+.btn:active{
+    color: white;
+}
+
+.btn:hover{
+    color: white;
+}
