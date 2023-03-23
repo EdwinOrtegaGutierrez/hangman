@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/index.css') }}">
+    <script src=" {{ url_for('static', filename='/scripts/bootstrap.min.js') }} "></script>
+    <title>Hangman - Eddy</title>
+</head>
+<body>
+    <header>
+        <h1 class="text-center text-light">Hangman</h1>
+        <hr class="mx-auto">
+    </header>
+    <main class="text-center">
+        <div class="logo mx-auto">
+            <img src="{{ url_for('static', filename='/img/hangman.png') }}" class="img-fluid">
+        </div>
+    </main>
+    <footer>
+        <div class="buttons mx-auto">
+            <div class="row row-cols-lg-auto g-4 mx-auto">
+                <div class="col-md-6 text-center">
+                    <a href="/game" type="submit" name="start_game" id="start_game" class="btn btn-outline-info">Start Game</a>
+                </div>
+                <div class="col-md-6 text-center">
+                    <a href="/high_score" type="submit" name="high_score" id="high_score" class="btn btn-outline-info">High Score</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
